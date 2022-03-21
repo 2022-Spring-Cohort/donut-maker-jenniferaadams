@@ -4,10 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
+    <title>Farm Clicker</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Fredoka&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+      <div class="topBanner">
+        <img class="banner" src="/img/banner.png">
+      </div>
+    <nav>
+      <ul>
+        <a href="https://cookie-clicker.co/" target="_blank"><li> <button class="cookieLink">Game Inspiration</button></li></a>
+        <li><button class="companyButton">About Our Farm</button></li>
+        <li><button class="developerInfoBtn">About the Developer</button></li>
+      </ul></nav>
+      <div class="container">
+      <div class="companyModal">
+          <div class="modal-content">
+            <span class="companyClose">&times;</span>
+            <h3>Welcome to Farm Clicker! We run an organic farm that grows vegetables!</h3>
+            <p>To play the game, start clicking on the vegetables in the center of the screen. Each time you click, you grow more vegetables!</p>
+            <p>To grow vegetables faster, you can buy a tractor. With a tractor, you earn more vegetables per click. More tractors equals more vegetables on each click!</p>
+            <p>You can also add a farmer. A farmer will automatically grow vegetables for you! Each farmer will grow one vegetable per second.</p>
+            <p>The more farmers and tractors you collect, the more vegetables you will be able to harvest!</p>
+          </div>
+      </div>
+      <div class="developerModal">
+        <div class="developer-modal-content">
+          <span class="devClose">&times;</span>
+          <p>Jennifer Adams is a full stack software developer. Check out her work here:</p>
+          <div class="list">
+            <a href="https://github.com/jenniferaadams" target="_blank"><img class="gitHubPic" src="img/gitHub.png"></a>
+            <h3><a href="https://jenniferaadams.github.io/" target="_blank">PORTFOLIO</h3></a>
+            <a href="https://www.linkedin.com/in/jenniferannadams/" target="_blank"><img class="linkedInPic" src="img/linkedIn.png"></a>
+          </div>
+        </div>
+    </div>
+    <div class="autoClickerSection">
+      <div class="toolTip">
+        <p class="toolTipText">A farmer will automatically grow vegetables for you! Each farmer will grow one vegetable per second!</p>
+      <img class="farmers" src="/img/farmers.png">
+    </div>
+        <h1 class="totalAutoClickerCount"></h1>
+        <button class="autoClicker">Add Farmer</button>
+        <h2 class="autoClickerCostDisplay"></h2>
+        </div>
+        <div class="MainDonutSection">
+          <img src="/img/vegetables.png" class="donutButton"></img>
+          <h1 class="totalDonutCount"></h1>
+      </div>
+    <div class="donutMultSection">  
+      <div class="toolTipTractor">
+        <p class="toolTipTrText">With a tractor, you earn more vegetables per click. More tractors equals more vegetables on each click!</p>
+      <img class="tractor" src="/img/tractor.png"> 
+    </div>
+      <h1 class="totalDonutMultiplierCount"></h1>
+        <button class="donutMultiplier">Add Tractor</button>
+        <h2 class="multCostDisplay"></h2>
+        <h3 class ="earnedPerClick"></h3>
+      </div> 
+      
+    </div>
+    <div class = "restartGameSection">
+      <button class="restartGameBtn"></button>
+    </div>
+    <div class="bottomVeg">
+      <img class="veg" src="/img/veggies.png">
+    </div>
+    <footer> 
+      <p class="footer">&copy; 2022 Jennifer Adams</p>
+    </footer>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,103 @@
+.topBanner {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.banner{
+    width: 75em;
+}
+nav>ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: #676545;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.donutButton{
+    width: auto;
+    height: 25em;
+}
+/* .donutButton:hover{
+    transform: scale(1.1);
+} */
+.donutButton:active{
+    transform: scale(.97);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 8px;
+}
+.totalDonutCount{
+    display: flex;
+    justify-content: center;
+}
+.autoClickerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+}
+.donutMultSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+}
+.restartGameSection{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+.cookieLink{
+    height: 2em;
+    width: 10em;
+    font-size: large;
+}
+.companyButton{
+    height: 2em;
+    width: 10em;
+    font-size: large;
+}
+.developerInfoBtn{
+    height: 2em;
+    width: 12em;
+    font-size: large;
+}
+.restartGameBtn{
+    height: 2em;
+    width: 10em;
+    font-size: large;
+}
+.farmers{
+    width: 10em;
+}
+
+.tractor{
+    width: 10em;
+}
+footer{
+    padding: 1em 0;
+    background: #676545;
+    text-align: center; 
+}
+.veg{
+    width: 100%;
+}
+.donutMultiplier{
+    height: 2em;
+    width: 10em;
+    font-size: large;
+}
+.autoClicker{
+    height: 2em;
+    width: 10em;
+    font-size: large;
+}
